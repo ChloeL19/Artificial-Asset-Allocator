@@ -354,7 +354,7 @@ with tf.Session() as sess:
     print(pvm)
     #print("Z3 = " + str(a))
 
-#MODEL --> NOT YET FUNCTIONING, BUT THIS IS FOR SPECING OUT THE STRUCTURE OF THE FINAL MODEL FUNCTION
+#MODEL 
 def model(X_train, pvm, batch_size, num_periods, total_periods, num_assets, num_channels, window_size, print_reward = True, num_epochs = 1)
     ops.reset_default_graph()                         # to be able to rerun the model without overwriting tf variables
     tf.set_random_seed(1)                             # to keep results consistent (tensorflow seed)
